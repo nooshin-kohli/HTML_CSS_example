@@ -7,9 +7,14 @@
 </head>
 
 <body>
-   <form>
+    <!-- novalidate baraye ghat validation hast be soorate movaght  -->
+    <!-- data to mifreste be ye file php -->
+   <form action="/action_page.php" novalidate>
        <label for="fanme">first name:</label> <br>
-      <input type="text" name="fname" id="fanme"> <br>
+       <!-- aouto focus baraye ineke varede safhe shod bere to text -->
+      <input type="text" name="fname" id="fanme"  placeholder="enter your first name" required autofocus> <br>
+      <label for="lanme">last name:</label> <br>
+      <input type="text" name="lname" id="lanme"  placeholder="enter your last name" required> <br>
       <label for="male">male</label>
       <input type="radio" name="gender" id="male" value="he"> 
       <br>
@@ -21,14 +26,17 @@
       <br>
       <label for="city">city</label>
       <select name="city" id="city">
+          <option value="0" selected disabled>pls choose a city</option>
           <option value="">shiraz</option>
+          <!-- mikhaym az aval yekish entekhab bashe -->
           <option value="">tehran</option>
-          <option value="">esfehan</option>
+          <option value="" >esfehan</option>
           <option value="">mashhad</option>
       </select>
       <br>
       <label for="car">what car</label>
-      <select name="cars" id="car">
+      <!-- multiple mitune chand ta meghdar entekhab kone -->
+      <select name="cars" id="car" multiple>
           <optgroup label="German group">
               <option value="">audi</option>
 
@@ -38,7 +46,32 @@
               <option value="">Samand</option>
           </optgroup>
       </select>
+      <br>
+      <!-- maghadiri ke karbar mitoone ezafe bar list ezafe kone -->
+      <label for="browser_list">what is your browser</label>
+      <input list="browsers" name="browser" id="browser_list">
+      <datalist id="browsers">
+          <option value="FireFox">
+          <option value="Opera">  
+      </datalist>
+      <br>
 
+      <!-- baraye ye matne boland chon textfil ha koochikan -->
+      <label for="address">address:</label>
+      <textarea name="address" id="address" cols="30" rows="10">write your address</textarea>
+      <br>
+      <label for="street num">street no:</label>
+      <input type="number" max="10" min="2" name="street num" id="street num">
+
+      <br>
+      <input type="submit" value="sabt">
+      <input type="reset">
+      <input type="button" value="i do nothing">
+      <br>
+      <button type="submit">sabt</button>   <!--type haye motefavet dare-->
+      <button type="reset">reset</button>
+      <button type="button"></button>
+      <!-- in button we can use img but we cant in input -->
 
    </form>
 </body>
