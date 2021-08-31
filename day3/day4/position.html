@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style>
+       .box{
+            
+            width: 100px;
+            height: 100px;
+
+        }
+/* inja darim migim harchi too in box ba tag p hast ro intori kon */
+        .box>p{          
+            color: white;
+
+        }
+        /* hame navadegani ke p daran ro black kard vali ghbli 
+        faghat p mostaghiman zire avalin div ro wight kard */
+        .box p{
+            color: black;
+        }
+        /* mikhaym begin agar ye elemneti ham in classo dasht ham in  */
+
+        .b1{
+            /* position: static; */
+            position: relative;
+            bottom: 10px;
+            left: 10px;
+            /* right, top */
+            background-color: coral;
+        }
+        .b2{
+            position: absolute;
+            top: 0;
+            background-color: blue;
+            /* display: none;   kolan mibare hata jasham nmimoone */
+            /* visibility: hidden; */
+        }
+        .x1.x2{
+            color: cadetblue;
+            font-size: 20px;
+        }
+        .b3{
+            position: fixed;
+            right: 50px;
+            background-color: red;
+        }
+        .b3{
+            position: sticky;
+            background-color: yellow;
+        }
+        .wrapper{
+            /* width: auto; */
+            position: relative;
+            height: 500px;
+            border: 10px solid black;
+        }
+       
+       
+       
+    </style>
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class=" box b1">
+       
+        </div>
+    
+        <div class="box b2">
+          
+            
+        </div>
+    
+        <div class="box b3">
+           
+    
+        </div>
+        <div class="box b4">
+           
+    
+        </div>
+
+    
+     </div>
+     
+    
+</body>
+
+
+</html>
