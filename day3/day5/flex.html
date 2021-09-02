@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style>
+        .parrent{
+            /* nesbat be arzi ke karnar dare che ghard gharar midi */
+            height: 100vh;
+            border: 10px solid #000;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* align-items: center; */
+            /* align-items: baseline; */
+            flex-wrap: wrap;
+            /* vaghti az wrap estefade mikonim
+            baraye center kardan az payini estefade mikonim */
+            align-content: center;
+        /* tarkibe wrap va row: */
+            /* flex-flow: wrap row; */
+
+
+        }
+        .child{
+            width: 125px;
+            height: 125px;
+            /* baraye tool hamun width ast */
+            flex-basis: 125px;
+        }
+        .c1{
+            background-color: tomato;
+            flex-grow: 1;
+            /* jaye mohtava avaz mishavad 
+            albate tartibe  */
+            order: 3;
+        }
+        .c2{
+            background-color: yellowgreen;
+            flex-grow: 1;
+            order: 1;
+        }
+        .c3{
+            background-color: violet;
+            flex-grow: 1;
+            order: 2;
+        }
+        .box-container{
+            margin-top: 35px;
+            border: 10px solid saddlebrown;
+            padding: 60px 0;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            /* margin aouto miare vasat vase fasele chap o rast */
+            margin: auto;
+            /* in baraye block ha be kar mire agar inlin bashad mesle img 
+            bayad block konim ba display: block; */
+            background-color: salmon;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="parrent">
+        <div class="child c1"></div>
+        <div class="child c2"></div>
+        <div class="child c3"></div>
+    
+
+    </div>
+    <div class="box-container">
+        <div class="box">
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>
