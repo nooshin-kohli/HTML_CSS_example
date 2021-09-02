@@ -30,11 +30,13 @@
             left: 10px;
             /* right, top */
             background-color: coral;
+            z-index: 2;
         }
         .b2{
             position: absolute;
             top: 0;
             background-color: blue;
+            z-index: 1;
             /* display: none;   kolan mibare hata jasham nmimoone */
             /* visibility: hidden; */
         }
@@ -49,6 +51,7 @@
         }
         .b3{
             position: sticky;
+            /* position: -webkit-sticky;   thiis is for safari mac*/
             background-color: yellow;
         }
         .wrapper{

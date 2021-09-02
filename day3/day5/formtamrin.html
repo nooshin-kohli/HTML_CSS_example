@@ -6,25 +6,81 @@
     <meta lang="fa" dir="rtl">
     <title>form</title>
     <style>
-       
+        @font-face {
+            font-family: 'Shabnam';
+            src: url(fonts/Shabnam-Medium.woff);
+        }
+        body,*{
+            font-family: 'Shabnam';
+    
+            
+        }
+        .wrap{
+            padding: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form1{
+            position: fixed;
+            background-color: burlywood;
+            width: 200px;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            border-radius: 15px;
+            
+        }
+        .form2{
+            background-color: cyan;
+            width: 200px;
+            height: 300px;
+        }
+        .f1{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            
+        }
+        .name{
+            border-top: hidden;
+            border-right: hidden;
+            border-left: hidden;
+        }
+
     </style>
 </head>
 
 <body dir="rtl">
-    <form action="/action_page.php" novalidate>
-        <label for="fanme">نام و نام خانوادگی *</label> <br>
-        <input type="text" name="fname" id="fanme" placeholder="مثال: علیرضا احمدی" required autofocus> <br><br>
-        <label for="nom">شماره تماس*</label> <br>
-        <input type="number" name="nom" id="nom" placeholder="مثال: 09305005050" required > <br><br>
-        <label for="date">تاریخ تولد</label><br>
-        <input type="date" id="date" name="date"> <br><br>
-        <label for="email"> ایمیل*</label><br>
-        <input type="email" name="email" placeholder="مثال: umadi@gmail.com" required id="email">
-        <br> <br>
-        <label for="pass">رمز عبور*</label> <br>
-        <input type="password" name="pass" placeholder="یک رمزعبور وارد کنید..." required id="pass"><br><br>
-        <button>ثبت نام</button>
-    </form>
+    <div class="wrap">
+        <div class="form1">
+            <form class="f1">
+                <label for="fanme">نام و نام خانوادگی *</label> <br>
+                <input class="name" type="text" name="fname" id="fanme" placeholder="مثال: علیرضا احمدی" required autofocus> <br>
+                <label for="nom">شماره تماس*</label> <br>
+                <input class="number" type="number" name="nom" id="nom" placeholder="مثال: 09305005050" required > <br>
+                <label for="date">تاریخ تولد</label><br>
+                <input class="date" type="date" id="date" name="date"> <br>
+                <label for="email"> ایمیل*</label><br>
+                <input class="email" type="email" name="email" placeholder="مثال: umadi@gmail.com" required id="email">
+                <br> 
+                <label for="pass">رمز عبور*</label> <br>
+                <input class="pass" type="password" name="pass" placeholder="یک رمزعبور وارد کنید..." required id="pass"><br>
+                <button class="button" type="submit">ثبت نام</button>
+            </form>
+        </div>
+        
+
+    </div>
+    <div class="form2">
+        <form novalidate>
+
+        </form>
+    </div>
+    
+    
     
 </body>
 
