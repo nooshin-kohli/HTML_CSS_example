@@ -70,7 +70,7 @@ body,*{
     color: rgba(0, 0, 0, 0.5);
 }
 button{
-    width: 100%;
+    width: 548px;
     padding: 10px;
     font-size: 16px;
     border: none;
@@ -82,24 +82,30 @@ button{
 }
 .s1{
     position: relative;
-    top: -35px;
-    right: 270px;
+    top: -104px;
+    padding-right: 10px;
     color: rgb(255, 0, 0);
-
 }
 .s2{
     position: relative;
-    top: -35px;
+    top: -32px;
     color: rgb(255, 0, 0);
 
 }
 .footer{
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 .link{
     text-decoration: none;
+}
+.form1{
+    display: inline-block;
+
+}
+.form2{
+    display: inline-block;
 }
 
 
